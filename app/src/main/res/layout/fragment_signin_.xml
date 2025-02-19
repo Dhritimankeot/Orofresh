@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/signin_image"
+            android:layout_width="973dp"
+            android:layout_height="299dp"
+            android:layout_marginBottom="492dp"
+            android:src="@mipmap/loginbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="324dp"
+            android:layout_height="61dp"
+            android:background="@drawable/edit_text_log"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Phone/Email"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signin_image"
+            app:layout_constraintVertical_bias="0.241" />
+
+        <EditText
+            android:id="@+id/sign_in_password"
+            android:layout_width="324dp"
+            android:layout_height="61dp"
+            android:background="@drawable/edit_text_log"
+            android:drawableLeft="@drawable/keylog"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Password"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_email"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <Button
+            android:id="@+id/Sign_in_button"
+            android:layout_width="165dp"
+            android:layout_height="61dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/aladin"
+            android:text="Sign In"
+            android:textColor="#50ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_password"
+            app:layout_constraintVertical_bias="0.209"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_dont_have_acct"
+            android:layout_width="177dp"
+            android:layout_height="24dp"
+            android:text="Don't have an account?"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.354"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sign_in_button"
+            app:layout_constraintVertical_bias="0.358" />
+
+        <TextView
+            android:id="@+id/tv_Sign_in"
+            android:layout_width="58dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="52dp"
+            android:text="Sign up!"
+            android:textAlignment="center"
+            android:textColor="#ff00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_dont_have_acct"
+            app:layout_constraintTop_toBottomOf="@+id/Sign_in_button"
+            app:layout_constraintVertical_bias="0.358" />
+
+        <TextView
+            android:id="@+id/for_pass"
+            android:layout_width="157dp"
+            android:layout_height="29dp"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ff00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sign_in_button"
+            app:layout_constraintVertical_bias="0.698" />
+
+        <TextView
+            android:id="@+id/orofresh"
+            android:layout_width="318dp"
+            android:layout_height="71dp"
+            android:fontFamily="@font/aclonica"
+            android:text="OROFRESH"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
